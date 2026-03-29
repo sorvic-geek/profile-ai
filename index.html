@@ -3,15 +3,49 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>SORVIC — Neural Interface</title>
+<title>Sorvic | AI Engineer, Full-Stack Developer and Marketing Websites</title>
+<meta name="description" content="Sorvic builds AI products, automation workflows, full-stack web apps, and conversion-focused websites for founders, experts, and product teams."/>
+<meta name="robots" content="index,follow"/>
+<meta name="author" content="Sorvic"/>
+<meta name="theme-color" content="#05050f"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Sorvic | AI Engineer, Full-Stack Developer and Marketing Websites"/>
+<meta property="og:description" content="AI products, SaaS interfaces, automation workflows, and landing pages that explain the offer clearly and convert."/>
+<meta property="og:locale" content="en_US"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Sorvic | AI Engineer, Full-Stack Developer and Marketing Websites"/>
+<meta name="twitter:description" content="AI products, SaaS interfaces, automation workflows, and landing pages that explain the offer clearly and convert."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Syne+Mono&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sorvic",
+  "jobTitle": "AI Engineer and Full-Stack Developer",
+  "description": "Sorvic builds AI products, automation workflows, full-stack web apps, and conversion-focused websites.",
+  "email": "hello@sorvic.dev",
+  "sameAs": [
+    "https://github.com/sorvic-geek",
+    "https://t.me/sorvic-geek",
+    "https://twitter.com/sorvic-geek"
+  ],
+  "knowsAbout": [
+    "AI product development",
+    "Automation workflows",
+    "Full-stack web development",
+    "Landing pages",
+    "SaaS interfaces",
+    "SEO copywriting"
+  ]
+}
+</script>
 <style>
-/* ═══════════════════════════════════════════
+/* ==============================
    TOKENS
-═══════════════════════════════════════════ */
+ ============================== */
 :root{
   --bg:       #05050f;
   --bg2:      #08081a;
@@ -33,6 +67,7 @@
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 body{
   background:var(--bg);
   color:var(--white);
@@ -49,9 +84,9 @@ body{
 ::-webkit-scrollbar-track{background:var(--bg);}
 ::-webkit-scrollbar-thumb{background:var(--cyan);border-radius:2px;}
 
-/* ═══════════════════════════════════════════
+/* ==============================
    CURSOR
-═══════════════════════════════════════════ */
+============================== */
 #c-core{
   position:fixed;width:8px;height:8px;
   background:var(--cyan);border-radius:50%;
@@ -70,9 +105,9 @@ body{
 body.hov #c-core{width:14px;height:14px;background:var(--purple);box-shadow:0 0 14px var(--purple),0 0 28px var(--purple);}
 body.hov #c-ring{width:52px;height:52px;border-color:var(--purple);}
 
-/* ═══════════════════════════════════════════
+/* ==============================
    NAV
-═══════════════════════════════════════════ */
+============================== */
 #nav{
   position:fixed;top:0;left:0;right:0;height:68px;z-index:900;
   transition:background .4s,backdrop-filter .4s,border-color .4s;
@@ -146,9 +181,9 @@ body.hov #c-ring{width:52px;height:52px;border-color:var(--purple);}
 }
 .mob-nav a:hover{color:var(--cyan);text-shadow:0 0 30px var(--cyan);}
 
-/* ═══════════════════════════════════════════
+/* ==============================
    HERO
-═══════════════════════════════════════════ */
+============================== */
 #hero{
   position:relative;min-height:100vh;
   display:flex;align-items:center;overflow:hidden;
@@ -264,7 +299,7 @@ body.hov #c-ring{width:52px;height:52px;border-color:var(--purple);}
 }
 
 .hero-desc{
-  font-size:.92rem;color:var(--grey);max-width:460px;
+  font-size:.92rem;color:var(--grey);max-width:620px;
   margin-top:16px;line-height:1.85;
   opacity:0;animation:fadeUp .8s .75s var(--ease) forwards;
 }
@@ -333,9 +368,9 @@ body.hov #c-ring{width:52px;height:52px;border-color:var(--purple);}
 @keyframes scrollFade{0%,100%{opacity:.3;transform:scaleY(1);}50%{opacity:1;transform:scaleY(1.2);}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
 
-/* ═══════════════════════════════════════════
+/* ==============================
    SECTION BASE
-═══════════════════════════════════════════ */
+============================== */
 .sec{padding:130px 0;}
 .wrap{max-width:1300px;margin:0 auto;padding:0 40px;}
 
@@ -360,9 +395,9 @@ body.hov #c-ring{width:52px;height:52px;border-color:var(--purple);}
 }
 .reveal.vis{opacity:1;transform:none;}
 
-/* ═══════════════════════════════════════════
+/* ==============================
    ABOUT
-═══════════════════════════════════════════ */
+============================== */
 #about{background:var(--bg2);position:relative;overflow:hidden;}
 #about::before{
   content:'SORVIC';
@@ -445,9 +480,9 @@ body.hov #c-ring{width:52px;height:52px;border-color:var(--purple);}
 }
 .int-txt{font-size:.84rem;color:var(--grey);line-height:1.7;}
 
-/* ═══════════════════════════════════════════
+/* ==============================
    PROJECTS
-═══════════════════════════════════════════ */
+============================== */
 #projects{background:var(--bg);position:relative;overflow:hidden;}
 #projects::after{
   content:'';position:absolute;
@@ -548,9 +583,9 @@ body.hov #c-ring{width:52px;height:52px;border-color:var(--purple);}
 .proj-link i{font-size:.58rem;transition:transform .3s var(--ease);}
 .proj-card:hover .proj-link i{transform:translate(3px,-3px);}
 
-/* ═══════════════════════════════════════════
+/* ==============================
    CONTACT
-═══════════════════════════════════════════ */
+============================== */
 #contact{background:var(--bg2);position:relative;overflow:hidden;}
 #contact::before{
   content:'';position:absolute;
@@ -616,10 +651,11 @@ body.hov #c-ring{width:52px;height:52px;border-color:var(--purple);}
 }
 .f-input::placeholder,.f-textarea::placeholder{color:var(--grey);}
 .f-textarea{height:120px;}
+.form-note{font-size:.78rem;color:var(--grey);line-height:1.75;}
 
-/* ═══════════════════════════════════════════
+/* ==============================
    FOOTER
-═══════════════════════════════════════════ */
+============================== */
 footer{
   padding:36px 0;
   border-top:1px solid var(--grey2);
@@ -651,9 +687,9 @@ footer .wrap{
 }
 .ft-socials a:hover{color:var(--cyan);text-shadow:0 0 12px var(--cyan);}
 
-/* ═══════════════════════════════════════════
+/* ==============================
    RESPONSIVE
-═══════════════════════════════════════════ */
+============================== */
 @media(max-width:900px){
   .wrap{padding:0 24px;}
   .sec{padding:90px 0;}
@@ -686,8 +722,8 @@ footer .wrap{
     <a href="#hero" class="logo">SORVIC</a>
     <ul class="nav-ul">
       <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">Services</a></li>
+      <li><a href="#projects">Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="nav-btn" id="nb" aria-label="Menu">
@@ -698,12 +734,13 @@ footer .wrap{
 
 <div class="mob-nav" id="mn">
   <a href="#hero"     onclick="closeMob()">Home</a>
-  <a href="#about"    onclick="closeMob()">About</a>
-  <a href="#projects" onclick="closeMob()">Projects</a>
+  <a href="#about"    onclick="closeMob()">Services</a>
+  <a href="#projects" onclick="closeMob()">Work</a>
   <a href="#contact"  onclick="closeMob()">Contact</a>
 </div>
 
-<!-- ═══════ HERO ═══════ -->
+<!-- ============================== HERO ============================== -->
+<!-- HERO -->
 <section id="hero">
   <canvas id="neural-canvas"></canvas>
   <div class="vignette"></div>
@@ -713,36 +750,37 @@ footer .wrap{
   <div class="hero-content">
     <div class="hero-sys">
       <div class="hero-sys-dot"></div>
-      SYS_ONLINE &nbsp;·&nbsp; neural.interface v2.0 &nbsp;·&nbsp; ready
+      Independent studio &nbsp;&middot;&nbsp; AI systems &nbsp;&middot;&nbsp; web products
     </div>
 
-    <h1 class="hero-name" data-text="SORVIC">
+    <h1 class="sr-only">AI engineer and full-stack developer for SaaS, automation and marketing websites</h1>
+
+    <div class="hero-name" data-text="SORVIC">
       SOR<span class="hero-slash">/</span>VIC
-    </h1>
+    </div>
 
     <p class="hero-tag">
-      Building the future with code, AI &amp; creativity
+      AI engineer and full-stack developer for SaaS, automation and websites that convert
     </p>
 
     <p class="hero-desc">
-      Full-stack developer &amp; AI engineer. I design systems that push
-      the boundary between human intent and machine execution.
+      I help founders and teams turn complex products into clear user journeys, practical AI features, and web experiences that explain the value quickly and make the next step obvious.
     </p>
 
     <div class="hero-btns">
-      <a href="#projects" class="btn-neon">
-        <span>View Projects</span>&nbsp;<i class="fa-solid fa-terminal"></i>
+      <a href="#about" class="btn-neon">
+        <span>See Services</span>&nbsp;<i class="fa-solid fa-terminal"></i>
       </a>
       <a href="#contact" class="btn-ghost-neon">
-        Contact Me <i class="fa-regular fa-paper-plane"></i>
+        Start a Project <i class="fa-regular fa-paper-plane"></i>
       </a>
     </div>
   </div>
 
   <div class="hero-status">
-    <div class="status-item"><div class="status-dot"></div>System online</div>
-    <div class="status-item"><div class="status-dot" style="background:var(--purple);box-shadow:0 0 6px var(--purple);animation-delay:.5s;"></div>AI modules loaded</div>
-    <div class="status-item"><div class="status-dot" style="background:var(--pink);box-shadow:0 0 6px var(--pink);animation-delay:1s;"></div>Ready to build</div>
+    <div class="status-item"><div class="status-dot"></div>AI workflows</div>
+    <div class="status-item"><div class="status-dot" style="background:var(--purple);box-shadow:0 0 6px var(--purple);animation-delay:.5s;"></div>Full-stack products</div>
+    <div class="status-item"><div class="status-dot" style="background:var(--pink);box-shadow:0 0 6px var(--pink);animation-delay:1s;"></div>Landing pages that convert</div>
   </div>
 
   <div class="hero-scroll">
@@ -751,71 +789,66 @@ footer .wrap{
   </div>
 </section>
 
-<!-- ═══════ ABOUT ═══════ -->
+<!-- ============================== ABOUT ============================== -->
+<!-- ABOUT -->
 <section id="about" class="sec">
   <div class="wrap">
     <div class="about-grid">
 
       <div class="about-bio reveal">
-        <div class="sec-label">01 — About</div>
-        <h2 class="sec-h">Who<br>am <span class="cx">I</span><span class="px">?</span></h2>
+        <div class="sec-label">01 - Services</div>
+        <h2 class="sec-h">What I <span class="cx">Build</span></h2>
         <br>
         <p>
-          I'm <strong>Sorvic</strong> — a developer who lives at the intersection
-          of <span class="hi">code</span>, <span class="hi">AI</span>, and visual craft.
-          I architect systems that are as elegant as they are powerful.
+          I build at the intersection of <span class="hi">AI</span>, <span class="hi">product UX</span>, and <span class="hi">full-stack development</span>. The goal is not to ship something flashy. The goal is to make the offer understandable, credible, and easy to act on.
         </p>
         <p>
-          My approach blends <strong>engineering precision</strong> with
-          an artist's instinct. Whether building neural pipelines or
-          crafting pixel-perfect UIs, I obsess over every detail.
+          I can take a project from positioning and page structure to interface design, frontend, backend, and AI functionality. Fewer handoffs usually means better consistency, faster iteration, and less noise.
         </p>
         <p>
-          When the terminal is dark, I'm behind a camera lens —
-          finding the same harmony between structure and beauty
-          that I chase in code.
+          This is a strong fit for founders, experts, and product teams that need one person who can handle both the message and the implementation without losing visual quality.
         </p>
 
         <div class="about-stats">
           <div class="stat-box">
             <span class="stat-num">3+</span>
-            <span class="stat-lbl">Years exp.</span>
+            <span class="stat-lbl">Years building</span>
           </div>
           <div class="stat-box">
             <span class="stat-num">20+</span>
-            <span class="stat-lbl">Projects</span>
+            <span class="stat-lbl">Projects shipped</span>
           </div>
           <div class="stat-box">
-            <span class="stat-num">∞</span>
-            <span class="stat-lbl">Curiosity</span>
+            <span class="stat-num">24h</span>
+            <span class="stat-lbl">First reply</span>
           </div>
         </div>
       </div>
 
       <div class="int-cards reveal" style="transition-delay:.15s;">
-        <div class="sec-label" style="margin-bottom:20px;">Interests</div>
+        <div class="sec-label" style="margin-bottom:20px;">Services</div>
 
         <div class="int-card">
-          <div class="int-ico">📷</div>
+          <div class="int-ico">01</div>
           <div class="int-body">
-            <div class="int-title">Photography</div>
-            <div class="int-txt">Capturing light, timing, and composition — a visual language that mirrors the precision of code.</div>
+            <div class="int-title">AI Products and Automation</div>
+            <div class="int-txt">Assistants, internal tools, workflow automation, and practical AI features that fit real business processes instead of sitting on top as a demo.</div>
           </div>
         </div>
 
         <div class="int-card">
-          <div class="int-ico">💻</div>
+          <div class="int-ico">02</div>
           <div class="int-body">
-            <div class="int-title">Coding</div>
-            <div class="int-txt">From systems to interfaces — writing clean, purposeful code that solves real problems elegantly.</div>
+            <div class="int-title">Web Apps and SaaS Interfaces</div>
+            <div class="int-txt">MVPs, dashboards, admin panels, and product interfaces with cleaner UX, better structure, and full-stack delivery from frontend to backend.</div>
           </div>
         </div>
 
         <div class="int-card">
-          <div class="int-ico">🤖</div>
+          <div class="int-ico">03</div>
           <div class="int-body">
-            <div class="int-title">Artificial Intelligence</div>
-            <div class="int-txt">Building and exploring LLMs, generative models, and agentic systems at the frontier of what's possible.</div>
+            <div class="int-title">Landing Pages and Positioning</div>
+            <div class="int-txt">SEO-aware structure, sharper copy, stronger CTAs, and visual systems that help technical offers read clearly and convert better.</div>
           </div>
         </div>
       </div>
@@ -824,15 +857,16 @@ footer .wrap{
   </div>
 </section>
 
-<!-- ═══════ PROJECTS ═══════ -->
+<!-- ============================== PROJECTS ============================== -->
+<!-- PROJECTS -->
 <section id="projects" class="sec">
   <div class="wrap">
     <div class="proj-hd reveal">
       <div>
-        <div class="sec-label">02 — Projects</div>
-        <h2 class="sec-h">Selected <span class="cx">Work</span></h2>
+        <div class="sec-label">02 - Work</div>
+        <h2 class="sec-h">Selected <span class="cx">Builds</span></h2>
       </div>
-      <div class="proj-ct">04 / projects</div>
+      <div class="proj-ct">04 / featured builds</div>
     </div>
 
     <div class="proj-grid">
@@ -841,14 +875,14 @@ footer .wrap{
         <div class="proj-card-inner">
           <div class="proj-num">[ 01 ]</div>
           <h3 class="proj-title">NeuroCanvas</h3>
-          <p class="proj-desc">AI-powered generative art platform transforming natural language into stunning visuals via custom diffusion model pipelines.</p>
+          <p class="proj-desc">Generative imaging product with prompt-based creation, guided user flows, and production-ready AI pipelines for creative teams, campaigns, and content operations.</p>
           <div class="proj-tags">
             <span class="proj-tag">Python</span>
             <span class="proj-tag">Diffusion</span>
             <span class="proj-tag">React</span>
             <span class="proj-tag">FastAPI</span>
           </div>
-          <a href="#" class="proj-link">View Project <i class="fa-solid fa-arrow-up-right"></i></a>
+          <a href="#contact" class="proj-link">Discuss Similar Project <i class="fa-solid fa-arrow-up-right"></i></a>
         </div>
       </div>
 
@@ -856,13 +890,13 @@ footer .wrap{
         <div class="proj-card-inner">
           <div class="proj-num">[ 02 ]</div>
           <h3 class="proj-title">LensForge</h3>
-          <p class="proj-desc">Full-stack photography platform with intelligent auto-tagging, EXIF extraction, and real-time collaborative editing workflows.</p>
+          <p class="proj-desc">Full-stack media platform that turns large photo libraries into searchable, collaborative workflows with metadata extraction, smart tagging, and faster review.</p>
           <div class="proj-tags">
             <span class="proj-tag">Node.js</span>
             <span class="proj-tag">PostgreSQL</span>
             <span class="proj-tag">TypeScript</span>
           </div>
-          <a href="#" class="proj-link">View Project <i class="fa-solid fa-arrow-up-right"></i></a>
+          <a href="#contact" class="proj-link">Discuss Similar Project <i class="fa-solid fa-arrow-up-right"></i></a>
         </div>
       </div>
 
@@ -870,13 +904,13 @@ footer .wrap{
         <div class="proj-card-inner">
           <div class="proj-num">[ 03 ]</div>
           <h3 class="proj-title">Synaptic CLI</h3>
-          <p class="proj-desc">Developer terminal assistant integrating LLM capabilities — code generation, smart commit messages, and context-aware debugging.</p>
+          <p class="proj-desc">Developer productivity tool that packages LLM support into real daily workflows: code generation, debugging context, commit support, and faster technical decisions.</p>
           <div class="proj-tags">
             <span class="proj-tag">Rust</span>
             <span class="proj-tag">LLM</span>
             <span class="proj-tag">CLI</span>
           </div>
-          <a href="#" class="proj-link">View Project <i class="fa-solid fa-arrow-up-right"></i></a>
+          <a href="#contact" class="proj-link">Discuss Similar Project <i class="fa-solid fa-arrow-up-right"></i></a>
         </div>
       </div>
 
@@ -884,13 +918,13 @@ footer .wrap{
         <div class="proj-card-inner">
           <div class="proj-num">[ 04 ]</div>
           <h3 class="proj-title">Orbit Dashboard</h3>
-          <p class="proj-desc">Real-time analytics for distributed systems — live telemetry, ML-driven anomaly detection, and customisable alert pipelines.</p>
+          <p class="proj-desc">Analytics dashboard for distributed products with live telemetry, anomaly signals, and decision-ready reporting for technical teams that need faster visibility.</p>
           <div class="proj-tags">
             <span class="proj-tag">Next.js</span>
             <span class="proj-tag">WebSocket</span>
             <span class="proj-tag">D3.js</span>
           </div>
-          <a href="#" class="proj-link">View Project <i class="fa-solid fa-arrow-up-right"></i></a>
+          <a href="#contact" class="proj-link">Discuss Similar Project <i class="fa-solid fa-arrow-up-right"></i></a>
         </div>
       </div>
 
@@ -898,17 +932,18 @@ footer .wrap{
   </div>
 </section>
 
-<!-- ═══════ CONTACT ═══════ -->
+<!-- ============================== CONTACT ============================== -->
+<!-- CONTACT -->
 <section id="contact" class="sec">
   <div class="wrap">
     <div class="contact-grid">
 
       <div class="contact-intro reveal">
-        <div class="sec-label">03 — Contact</div>
-        <h2 class="sec-h">Let's <span class="px">Connect</span></h2>
+        <div class="sec-label">03 - Contact</div>
+        <h2 class="sec-h">Start a <span class="px">Project</span></h2>
         <br>
-        <p>Have a project, a collab, or just want to talk about AI and code? My inbox is always open.</p>
-        <p>I respond within 24 hours. Let's build something extraordinary.</p>
+        <p>If you need an AI feature, product MVP, internal tool, or landing page that explains the offer and converts, send a short brief.</p>
+        <p>Share the goal, current stack, and timeline. I reply within 24 hours with next steps, questions, or a realistic way to approach the build.</p>
 
         <div class="contact-lines">
           <a href="mailto:hello@sorvic.dev" class="contact-line">
@@ -921,7 +956,7 @@ footer .wrap{
             </div>
             <i class="fa-solid fa-arrow-up-right cl-arr"></i>
           </a>
-          <a href="https://github.com/sorvic" target="_blank" class="contact-line">
+          <a href="https://github.com/sorvic" target="_blank" rel="noopener noreferrer" class="contact-line">
             <div class="cl-left">
               <i class="fa-brands fa-github cl-ico"></i>
               <div>
@@ -931,7 +966,7 @@ footer .wrap{
             </div>
             <i class="fa-solid fa-arrow-up-right cl-arr"></i>
           </a>
-          <a href="https://t.me/sorvic" target="_blank" class="contact-line">
+          <a href="https://t.me/sorvic" target="_blank" rel="noopener noreferrer" class="contact-line">
             <div class="cl-left">
               <i class="fa-brands fa-telegram cl-ico" style="color:var(--cyan);text-shadow:0 0 8px var(--cyan);"></i>
               <div>
@@ -941,7 +976,7 @@ footer .wrap{
             </div>
             <i class="fa-solid fa-arrow-up-right cl-arr"></i>
           </a>
-          <a href="https://twitter.com/sorvic" target="_blank" class="contact-line">
+          <a href="https://twitter.com/sorvic" target="_blank" rel="noopener noreferrer" class="contact-line">
             <div class="cl-left">
               <i class="fa-brands fa-x-twitter cl-ico" style="color:var(--purple);text-shadow:0 0 8px var(--purple);"></i>
               <div>
@@ -955,50 +990,56 @@ footer .wrap{
       </div>
 
       <div class="reveal" style="transition-delay:.15s;">
-        <div class="form">
+        <form class="form" id="contact-form" onsubmit="sendMsg(event)">
           <div class="f-group">
-            <label class="f-label">// Your name</label>
-            <input type="text" class="f-input" placeholder="John Doe"/>
+            <label class="f-label" for="name">// Your name</label>
+            <input type="text" id="name" name="name" class="f-input" placeholder="John Doe" required/>
           </div>
           <div class="f-group">
-            <label class="f-label">// Email address</label>
-            <input type="email" class="f-input" placeholder="you@example.com"/>
+            <label class="f-label" for="email">// Email address</label>
+            <input type="email" id="email" name="email" class="f-input" placeholder="you@example.com" required/>
           </div>
           <div class="f-group">
-            <label class="f-label">// Message</label>
-            <textarea class="f-textarea" placeholder="Tell me about your project..."></textarea>
+            <label class="f-label" for="company">// Company or product</label>
+            <input type="text" id="company" name="company" class="f-input" placeholder="Product name or company"/>
           </div>
-          <button class="btn-neon" onclick="sendMsg(event)" style="align-self:flex-start;">
-            <span>Transmit Message</span>&nbsp;<i class="fa-solid fa-satellite-dish"></i>
+          <div class="f-group">
+            <label class="f-label" for="message">// Project brief</label>
+            <textarea id="message" name="message" class="f-textarea" placeholder="What are you building, what is the goal, and what timeline do you have?" required></textarea>
+          </div>
+          <button type="submit" id="submit-btn" class="btn-neon" style="align-self:flex-start;">
+            <span>Send Project Brief</span>&nbsp;<i class="fa-solid fa-satellite-dish"></i>
           </button>
-        </div>
+          <p class="form-note">This opens your email client with the brief prefilled. You can also write directly to hello@sorvic.dev.</p>
+        </form>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ═══════ FOOTER ═══════ -->
+<!--============================== FOOTER ============================== -->
+<!-- FOOTER -->
 <footer>
   <div class="wrap">
     <div class="ft-logo">SORVIC</div>
-    <div class="ft-copy">&copy; <span id="yr"></span> Sorvic — All systems operational</div>
+    <div class="ft-copy">&copy; <span id="yr"></span> Sorvic | AI engineer, full-stack developer, marketing websites</div>
     <div class="ft-socials">
-      <a href="https://github.com/sorvic"   target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://t.me/sorvic"         target="_blank"><i class="fa-brands fa-telegram"></i></a>
-      <a href="https://twitter.com/sorvic"  target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://github.com/sorvic-geek" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://t.me/sorvic-geek" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://twitter.com/sorvic-geek" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════════
+<!-- ==============================
    JAVASCRIPT
-═══════════════════════════════════════════ -->
+============================== -->
 <script>
-/* ── Year ── */
+/* === Year === */
 document.getElementById('yr').textContent = new Date().getFullYear();
 
-/* ── Custom cursor ── */
+/* в”Ђв”Ђ Custom cursor в”Ђв”Ђ */
 const core = document.getElementById('c-core');
 const ring = document.getElementById('c-ring');
 let mx=0,my=0,rx=0,ry=0;
@@ -1016,11 +1057,11 @@ document.querySelectorAll('a,button,.proj-card,.int-card,.contact-line,.stat-box
   el.addEventListener('mouseleave',()=>document.body.classList.remove('hov'));
 });
 
-/* ── Nav scroll ── */
+/* === Nav scroll === */
 const nav=document.getElementById('nav');
 addEventListener('scroll',()=>nav.classList.toggle('on',scrollY>30),{passive:true});
 
-/* ── Mobile nav ── */
+/* === Mobile nav === */
 const nb=document.getElementById('nb'),mn=document.getElementById('mn');
 nb.addEventListener('click',()=>{
   const o=nb.classList.toggle('open');
@@ -1032,13 +1073,13 @@ function closeMob(){
   document.body.style.overflow='';
 }
 
-/* ── Scroll reveal ── */
+/* === Scroll reveal === */
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target);} });
 },{threshold:.1,rootMargin:'0px 0px -50px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-/* ── Smooth scroll ── */
+/* === Smooth scroll === */
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{
     const t=document.querySelector(a.getAttribute('href'));
@@ -1046,7 +1087,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   });
 });
 
-/* ── 3D Tilt on project cards ── */
+/* === 3D Tilt on project cards === */
 document.querySelectorAll('[data-tilt]').forEach(card=>{
   card.addEventListener('mousemove',e=>{
     const r=card.getBoundingClientRect();
@@ -1059,21 +1100,42 @@ document.querySelectorAll('[data-tilt]').forEach(card=>{
   });
 });
 
-/* ── Contact form ── */
+/* === Contact form === */
 function sendMsg(e){
-  const btn=e.currentTarget, span=btn.querySelector('span');
-  span.textContent='Transmission sent ✓';
-  btn.style.background='var(--cyan)'; btn.style.color='var(--bg)';
+  e.preventDefault();
+  const form=e.currentTarget;
+  const btn=form.querySelector('#submit-btn');
+  const span=btn.querySelector('span');
+  const name=form.querySelector('#name').value.trim();
+  const email=form.querySelector('#email').value.trim();
+  const company=form.querySelector('#company').value.trim();
+  const message=form.querySelector('#message').value.trim();
+
+  const subject=encodeURIComponent(`Project inquiry from ${name}`);
+  const body=encodeURIComponent(
+    `Name: ${name}\n` +
+    `Email: ${email}\n` +
+    `Company / Product: ${company || 'Not specified'}\n\n` +
+    `Project brief:\n${message}`
+  );
+
+  span.textContent='Opening email client';
+  btn.style.background='var(--cyan)';
+  btn.style.color='var(--bg)';
   btn.style.boxShadow='0 0 20px var(--cyan)';
+  window.location.href=`mailto:hello@sorvic.dev?subject=${subject}&body=${body}`;
+
   setTimeout(()=>{
-    span.textContent='Transmit Message';
-    btn.style.background=''; btn.style.color=''; btn.style.boxShadow='';
-  },3000);
+    span.textContent='Send Project Brief';
+    btn.style.background='';
+    btn.style.color='';
+    btn.style.boxShadow='';
+  },2400);
 }
 
-/* ══════════════════════════════════════
+/* ==============================
    NEURAL NETWORK CANVAS
-══════════════════════════════════════ */
+============================== */
 (function(){
   const canvas=document.getElementById('neural-canvas');
   const ctx=canvas.getContext('2d');
